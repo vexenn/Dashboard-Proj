@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- Font-awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <main>
+        <div class="user">
+            <img id="userImg" src="" alt="">
+            <h1 id="username"></h1>
+            <h4 id="userId"></h4>
+        </div><!--
+    --><div class="stats">
+            <div id="time"></div>
+            <h2>My Progress:</h2>
+            <div id="progress">
+                <h2 id="progress-percent"></h2>
+                <div id="progress-inner"></div>
+            </div>
+            <button>RESUME</button>
+        </div><!--
+    --><div class="active">
+            <h2 id="active-title"></h2>
+            <ul id="active-list"></ul>
+        </div><!--
+    --><div class="footer">
+            <ul>
+                <li><a href="#" onclick="showCourses()">COURSES</a></li>
+                <li><a href="#" onclick="showActivity()">ACTIVITY</a></li>
+                <li><a href="#" onclick="showAccount()">ACCOUNT</a></li>
+            </ul>
+        </div><!--
+    -->
+    </main>
+
+    <nav>
+        <ul>
+            <li><i class="fas fa-bars" onclick="expandMenu()"></i></li>
+            <li><i class="fas fa-home"></i><span>Home</span></li>
+            <li><i class="fas fa-sign-out-alt"></i><span>Log Out</span></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
